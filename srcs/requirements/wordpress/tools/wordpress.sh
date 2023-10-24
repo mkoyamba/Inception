@@ -30,14 +30,10 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 					--admin_password=$WP_ADMIN_PASSWORD \
 					--admin_email=$WP_ADMIN_EMAIL \
 					--skip-email \
-					--allow-root
 
 	wp user create  $WP_USER \
 					$WP_USER_EMAIL \
 					--user_pass=$WP_USER_PASSWORD \
-					--allow-root
-
-	wp theme install inspiro --activate --allow-root
 
 fi
 
