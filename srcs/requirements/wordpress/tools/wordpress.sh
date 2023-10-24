@@ -29,11 +29,11 @@ if [ ! -f /var/www/html/wp-config.php ]; then
 					--admin_user=$WP_ADMIN_USER \
 					--admin_password=$WP_ADMIN_PASSWORD \
 					--admin_email=$WP_ADMIN_EMAIL \
-					--skip-email \
+					--skip-email
 
 	wp user create  $WP_USER \
 					$WP_USER_EMAIL \
-					--user_pass=$WP_USER_PASSWORD \
+					--user_pass=$WP_USER_PASSWORD
 
 fi
 
